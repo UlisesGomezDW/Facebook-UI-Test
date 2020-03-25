@@ -1,0 +1,346 @@
+<html>
+<head>
+  <meta charset="utf-8">
+	 <!-- Ajustes de pantalla -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Hoja de estilo -->
+  <link rel="stylesheet" href="Estilos/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="Estilos/Estilo.css">
+  <!-- Librerias de Java Script -->
+  <script src="Script/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="Script/jquery.mobile-1.4.5.min.js"></script>
+   <script src="Script/Publica.js" type="text/javascript"></script>
+   <script src="Script/Likes.js" type="text/javascript"></script>
+ <script>
+function Foto() {
+  var face="#Foto" 
+    document.location.href=face; }
+</script>
+<script>
+function Mess() {
+  var face="Mess.html" 
+    document.location.href=face; }
+</script> 
+<script>
+function Buscar() {
+  var face="Buscar.html" 
+    document.location.href=face; }
+</script>    
+<script>
+function Comenta() { 
+  var co=document.getElementById("comm").value;
+  document.getElementById("Comentar").innerHTML = co;
+  var co1=document.getElementById("comm1").value;
+  document.getElementById("Comentar1").innerHTML = co1;
+  var co2=document.getElementById("comm2").value;
+  document.getElementById("Comentar2").innerHTML = co2;
+  var co3=document.getElementById("comm3").value;
+  document.getElementById("Comentar3").innerHTML = co3;
+  var co4=document.getElementById("comm4").value;
+  document.getElementById("Comentar4").innerHTML = co4; 
+}
+</script> 
+</head>
+<body>
+<div data-role="page" id="home">	
+<div data-role="header">
+  <div style="background: #3b5998">
+  <center> <table><tr><td><button onclick="Foto()" style="background: #3b5998; border:none;" ><img src="Icons/Came.png" ></button></td><td><img src="Icons/search.png"></td><td><input type="text" name="search" placeholder="Buscar" readonly="readonly" onclick="Buscar()" style="background: #3b5998; color: white; border:none;"></td><td><button onclick="Mess()" style="background: #3b5998; border:none;"><img src="Icons/mes.png" ></button></td></tr></table></center>
+  </div>	
+  <div data-role="navbar" >
+    <ul>
+    <li><a href="inicio.html" target="_self" style="background: white;" class="ui-btn-active"><center><img src="Icons/1.png"></center></a></li>
+    <li><a href="Videos.html" target="_self" style="background: white;" ><center><img src="Icons/2.png"></center></a></li>	
+    <li><a href="Ventas.html" target="_self" style="background: white;"><center><img src="Icons/myh.png"></center></a></li>
+     <li><a href="Notificaciones.html" target="_self" style="background: white;"><center><img src="Icons/4.png"></center></a></li>
+     <li><a href="Opciones.html" target="_self" style="background: white;"><center><img src="Icons/5.png"></center></a></li> 
+    </ul> 
+  </div>
+  <div style="background-color: #DADADC; width: 100%; height: 1;"></div>
+  <div style="background-color: white; width: 100%;"><center>
+      <table>
+        <tr>
+          <td><a href="camara.html"  id="perfil2" ><img id="perfil2" src="Images/uli.jpg" width="35" height="35"></a></td>
+          <td><button style="background: white; width: 200px;">¿Qué vendes?</button></td>
+          <td><button style="background: white;"><img src="Icons/gl.png"></button></td>
+        </tr>
+
+      </table></center></div>
+    <div style="background-color: #DADADC; width: 100%; height: 5;"></div>   
+   <!-- Publicacion 1 -->
+    <fieldset style="background-color: white; "> 
+    <br> 
+    <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="camara.html"  id="perfil2" ><img id="perfil2" src="Images/boss.png" width="35" height="35"></a></center></td> <td><center><b><a href="" style="text-decoration:none; color: black;">Juan Mendoza</a></b></center> <font size="1" style="text-align: left;">30 minutos<font></td> </table>  
+    <br><br>  
+      
+    <p style="text-align: left; font-weight: normal;" >&nbsp;Vendo Macbook Pro! $22,598.10 
+      <br>&nbsp;Envíos y pedidos a toda la Republica Mexicana. </p>   
+    <img src="Images/mac.jpg" style="height: 40%; width: 100%;">    
+    <div data-role="navbar" >
+    <br>
+    <ul>
+      <li><a href="#anylink" style="background: white;" onclick="Resultado('+')"> <table  align="center"> <tr> <td ><center><img src="Icons/lik.png" id="operador"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Com" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/com.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Compa" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/n.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+ </ul>
+  </div> 
+    </fieldset>
+  <div style="background-color: #DADADC; width: 100%; height: 5;"></div>
+  <!-- Publicacion 2 -->
+    <fieldset style="background-color: white; "> 
+    <br> 
+    <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="camara.html"  id="perfil2" ><img id="perfil2" src="Images/live.png" width="35" height="35"></a></center></td> <td><center><b><a href="" style="text-decoration:none; color: black;">Liverpool</a></b></center> <font size="1" style="text-align: left;">Publicidad<font></td> </table>  
+    <br><br>  
+     
+    <p style="text-align: left; font-weight: normal;" >&nbsp;¿Te lo vas a perder? no dejes pasar la oportunidad &nbsp;y aprovecha hasta 50% de descuento en las &nbsp;últimas hotas de <font color="blue">#HotSale</font> </p>   
+    <center><img src="Images/liv.png" style="height: 50%; width: 90%;"></center>    
+    <div data-role="navbar" >
+    <br>
+    <ul>
+      <li><a href="#anylink" style="background: white;" onclick="Resultado('a')"> <table  align="center"> <tr> <td ><center><img src="Icons/lik.png" id="opera"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Com1" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/com.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Compa" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/n.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+ </ul>
+  </div> 
+    </fieldset>
+  <div style="background-color: #DADADC; width: 100%; height: 5;"></div>
+  <!-- Publicacion 3 -->
+    <fieldset style="background-color: white; "> 
+    <br> 
+    <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="camara.html"  id="perfil2" ><img id="perfil2" src="Images/jo.jpg" width="35" height="35"></a></center></td> <td><center><b><a href="" style="text-decoration:none; color: black;">Jorge Privado</a></b></center> <font size="1" style="text-align: left;">2 horas<font></td> </table>  
+    <br><br>  
+     
+    <p style="text-align: left; font-weight: normal;" >&nbsp;Vendo Nord Stage 2! $51,999.00 
+      <br>&nbsp;Envíos y pedidos a toda la Republica Mexicana. <br>
+  &nbsp;Para más información envie su mensaje. </p>  
+    <img src="Images/nord.jpg" style="height: 30%; width: 100%;">    
+    <div data-role="navbar" >
+    <br>
+    <ul>
+      <li><a href="#anylink" style="background: white;" onclick="Resultado('b')"> <table  align="center"> <tr> <td ><center><img src="Icons/lik.png" id="uno"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Com2" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/com.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Compa" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/n.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+ </ul>
+  </div> 
+    </fieldset>
+  <div style="background-color: #DADADC; width: 100%; height: 5;"></div>  
+ <!-- Publicacion 4 -->
+    <fieldset style="background-color: white; "> 
+    <br> 
+    <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="camara.html"  id="perfil2" ><img id="perfil2" src="Images/girl.png" width="35" height="35"></a></center></td> <td><center><b><a href="" style="text-decoration:none; color: black;">Laura Herrera</a></b></center> <font size="1" style="text-align: left;">3 horas<font></td> </table>  
+    <br><br>  
+  
+    <p style="text-align: left; font-weight: normal;" >&nbsp;Vendo iPhone 8 64gb color red! $16,499.00 <br>
+  &nbsp;Para más información envie su mensaje. </p>  
+    <img src="Images/iphone.jpg" style="height: 30%; width: 100%;">    
+    <div data-role="navbar" >
+    <br>
+    <ul>
+      <li><a href="#anylink" style="background: white;" onclick="Resultado('c')"> <table  align="center"> <tr> <td ><center><img src="Icons/lik.png" id="dos"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Com3" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/com.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Compa" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/n.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+ </ul>
+  </div> 
+    </fieldset>
+  <div style="background-color: #DADADC; width: 100%; height: 5;"></div>
+  <!-- Publicacion 5 -->
+    <fieldset style="background-color: white; "> 
+    <br> 
+    <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="camara.html"  id="perfil2" ><img id="perfil2" src="Images/football.png" width="35" height="35"></a></center></td> <td><center><b><a href="" style="text-decoration:none; color: black;">Deportes Store</a></b></center> <font size="1" style="text-align: left;">20 horas<font></td> </table>  
+    <br><br>  
+     
+    <p style="text-align: left; font-weight: normal;" >&nbsp;Compra el Jersey Oficial de la Selección!    
+      <br>&nbsp;Envíos y pedidos a toda la Republica Mexicana. <br>
+  &nbsp;Precio general: $1,250.00 <font color="blue">#Rusia2018</font></p>  
+    <center><img src="Images/jersey.jpg" style="height: 50%; width: 70%;"></center>    
+    <div data-role="navbar" >
+    <br>
+    <ul>
+      <li><a href="#anylink" style="background: white;" onclick="Resultado('d')"> <table  align="center"> <tr> <td ><center><img src="Icons/lik.png" id="tres"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Com4" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/com.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Compa" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/n.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+ </ul>
+  </div> 
+    </fieldset>
+  <div style="background-color: #DADADC; width: 100%; height: 5;"></div>
+ </div>
+       <div data-role="footer" data-position="fixed" style="background: #3b5998;">
+    <h1 style="color: white;">Facebook</h1>
+  </div>
+</div> 
+
+<!-- COMENTARIOS -->
+<!-- Comentario 1 -->
+<div data-role="page" data-dialog="true" id="Com">
+  <div data-role="header" style="background: #3b5998; border:none;">
+    <center><p style="color: white; font-weight: normal;">Comentarios</p></center> 
+  </div>
+  <div data-role="main" class="ui-content">
+    <div style="width: 100%; background-color: #DADADC; border-radius: 20px 20px 20px 20px;">
+      <table align="left">
+        <tr> 
+           <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/perf.jpg" width="35" height="35"></a></center></td> 
+           <td> <b><a href="Perfil.html" style="text-decoration:none; color: black;">Ulises</a></b><br><font size="3" style="text-align: left;" id="Comentar"> <font></td>
+        </tr></table><br><br> 
+    </div>
+  </div>  
+    <div data-role="footer">
+    <center>
+    <table>
+      <tr>
+        <td><button><img src="Icons/cc.png"></button></td>
+        <td><input type="text" id="comm" name="comm" placeholder="Escribe un comentario..."></td>
+        <td><button onclick="Comenta()"><img src="Icons/done.png"></button></td>
+      </tr>
+    </table></center>
+  </div>
+    
+  </div>
+  <!-- Comentario 2 -->
+<div data-role="page" data-dialog="true" id="Com1">
+  <div data-role="header" style="background: #3b5998; border:none;">
+    <center><p style="color: white; font-weight: normal;">Comentarios</p></center> 
+  </div>
+  <div data-role="main" class="ui-content">
+    <div style="width: 100%; background-color: #DADADC; border-radius: 20px 20px 20px 20px;">
+      <table align="left">
+        <tr> 
+           <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/perf.jpg" width="35" height="35"></a></center></td> 
+           <td> <b><a href="Perfil.html" style="text-decoration:none; color: black;">Ulises</a></b><br><font size="3" style="text-align: left;" id="Comentar1"> <font></td>
+        </tr></table><br><br> 
+    </div>
+  </div>  
+    <div data-role="footer">
+    <center>
+    <table>
+      <tr>
+        <td><button><img src="Icons/cc.png"></button></td>
+        <td><input type="text" id="comm1" name="comm" placeholder="Escribe un comentario..."></td>
+        <td><button onclick="Comenta()"><img src="Icons/done.png"></button></td>
+      </tr>
+    </table></center>
+  </div>
+    
+  </div>
+  <!-- Comentario 3 -->
+<div data-role="page" data-dialog="true" id="Com2">
+  <div data-role="header" style="background: #3b5998; border:none;">
+    <center><p style="color: white; font-weight: normal;">Comentarios</p></center> 
+  </div>
+  <div data-role="main" class="ui-content">
+    <div style="width: 100%; background-color: #DADADC; border-radius: 20px 20px 20px 20px;">
+      <table align="left">
+        <tr> 
+           <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/perf.jpg" width="35" height="35"></a></center></td> 
+           <td> <b><a href="Perfil.html" style="text-decoration:none; color: black;">Ulises</a></b><br><font size="3" style="text-align: left;" id="Comentar2"> <font></td>
+        </tr></table><br><br> 
+    </div>
+  </div>  
+    <div data-role="footer">
+    <center>
+    <table>
+      <tr>
+        <td><button><img src="Icons/cc.png"></button></td>
+        <td><input type="text" id="comm2" name="comm" placeholder="Escribe un comentario..."></td>
+        <td><button onclick="Comenta()"><img src="Icons/done.png"></button></td>
+      </tr>
+    </table></center>
+  </div>
+    
+  </div>
+  <!-- Comentario 4 -->
+<div data-role="page" data-dialog="true" id="Com3">
+  <div data-role="header" style="background: #3b5998; border:none;">
+    <center><p style="color: white; font-weight: normal;">Comentarios</p></center> 
+  </div>
+  <div data-role="main" class="ui-content">
+    <div style="width: 100%; background-color: #DADADC; border-radius: 20px 20px 20px 20px;">
+      <table align="left">
+        <tr> 
+           <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/perf.jpg" width="35" height="35"></a></center></td> 
+           <td> <b><a href="Perfil.html" style="text-decoration:none; color: black;">Ulises</a></b><br><font size="3" style="text-align: left;" id="Comentar3"> <font></td>
+        </tr></table><br><br> 
+    </div>
+  </div>  
+    <div data-role="footer">
+    <center>
+    <table>
+      <tr>
+        <td><button><img src="Icons/cc.png"></button></td>
+        <td><input type="text" id="comm3" name="comm" placeholder="Escribe un comentario..."></td>
+        <td><button onclick="Comenta()"><img src="Icons/done.png"></button></td>
+      </tr>
+    </table></center>
+  </div>
+    
+  </div>
+  <!-- Comentario 5 -->
+<div data-role="page" data-dialog="true" id="Com4">
+  <div data-role="header" style="background: #3b5998; border:none;">
+    <center><p style="color: white; font-weight: normal;">Comentarios</p></center> 
+  </div>
+  <div data-role="main" class="ui-content">
+    <div style="width: 100%; background-color: #DADADC; border-radius: 20px 20px 20px 20px;">
+      <table align="left">
+        <tr> 
+           <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/perf.jpg" width="35" height="35"></a></center></td> 
+           <td> <b><a href="Perfil.html" style="text-decoration:none; color: black;">Ulises</a></b><br><font size="3" style="text-align: left;" id="Comentar4"> <font></td>
+        </tr></table><br><br> 
+    </div>
+  </div>  
+    <div data-role="footer">
+    <center>
+    <table>
+      <tr>
+        <td><button><img src="Icons/cc.png"></button></td>
+        <td><input type="text" id="comm4" name="comm" placeholder="Escribe un comentario..."></td>
+        <td><button onclick="Comenta()"><img src="Icons/done.png"></button></td>
+      </tr>
+    </table></center>
+  </div></div>
+  <!-- Comentario 6 -->
+<div data-role="page" data-dialog="true" id="Com5">
+  <div data-role="header" style="background: #3b5998; border:none;">
+    <center><p style="color: white; font-weight: normal;">Comentarios</p></center> 
+  </div>
+  <div data-role="main" class="ui-content">
+    <div style="width: 100%; background-color: #DADADC; border-radius: 20px 20px 20px 20px;">
+      <table align="left">
+        <tr> 
+           <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/perf.jpg" width="35" height="35"></a></center></td> 
+           <td> <b><a href="Perfil.html" style="text-decoration:none; color: black;">Ulises</a></b><br><font size="3" style="text-align: left;" id="Comentar5"> <font></td>
+        </tr></table><br><br> 
+    </div>
+  </div>  
+    <div data-role="footer">
+    <center>
+    <table>
+      <tr>
+        <td><button><img src="Icons/cc.png"></button></td>
+        <td><input type="text" id="comm5" name="comm" placeholder="Escribe un comentario..."></td>
+        <td><button onclick="Comenta()"><img src="Icons/done.png"></button></td>
+      </tr>
+    </table></center>
+  </div>
+    
+  </div>
+<!-- Compartir -->
+<div data-role="page" data-dialog="true" id="Compa">
+  <div data-role="header" style="background: #3b5998; border:none;">
+    <center><p style="color: white; font-weight: normal;">Compartir</p></center>  </div> 
+    <div style="background: white;  ">
+      <ul data-role="listview" data-inset="true">
+      <li><a href="#p">Compartir ahora</a></li>
+      <li><a href="#P">Escribir publicación</a></li>
+      <li><a href="#p">Enviar como mensaje</a></li>
+      <li><a href="#p">Compartir en una página</a></li>
+    </ul>
+    </div>
+  </div>
+  <!-- Foto -->
+<div data-role="page" data-dialog="true" id="Foto" data-theme="b" style="width: 100%; height: 100%;">
+   <img src="Images/foto.jpg" style="width: 100%; height: 100%;">
+  </div>   
+</body>
+</html>

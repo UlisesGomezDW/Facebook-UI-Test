@@ -1,0 +1,561 @@
+<html>
+<head>
+  <meta charset="utf-8">
+	 <!-- Ajustes de pantalla -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Hoja de estilo -->
+  <link rel="stylesheet" href="Estilos/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="Estilos/Estilo.css">
+  <!-- Librerias de Java Script -->
+  <script src="Script/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="Script/jquery.mobile-1.4.5.min.js"></script>
+  <script src="Script/Likes.js" type="text/javascript"></script>
+<script>
+function Foto() {
+  var foto="#Foto" 
+    document.location.href=foto; }
+</script>
+<script>
+function Buscar() {
+  var face="Buscar.html" 
+    document.location.href=face; }
+</script>
+<script>
+function Mess() {
+  var face="Mess.html" 
+    document.location.href=face; }
+</script>    
+<script>
+function myFunction() { 
+  var pu=document.getElementById("es").value;
+  document.getElementById("MP").innerHTML = pu;
+
+}
+</script>
+<script>
+function Comenta() { 
+  var co=document.getElementById("comm").value;
+  document.getElementById("Comentar").innerHTML = co;
+  var co1=document.getElementById("comm1").value;
+  document.getElementById("Comentar1").innerHTML = co1;
+  var co2=document.getElementById("comm2").value;
+  document.getElementById("Comentar2").innerHTML = co2;
+  var co3=document.getElementById("comm3").value;
+  document.getElementById("Comentar3").innerHTML = co3;
+  var co4=document.getElementById("comm4").value;
+  document.getElementById("Comentar4").innerHTML = co4;
+  var co5=document.getElementById("comm5").value;
+  document.getElementById("Comentar5").innerHTML = co5; 
+}
+</script>  
+</head>
+<body>
+<div data-role="page" id="home">	
+<div data-role="header">
+  <div style="background: #3b5998">
+  <center> <table><tr><td><button onclick="Foto()" style="background: #3b5998; border:none;" ><img src="Icons/Came.png" ></button></td><td><img src="Icons/search.png"></td><td><input type="text" name="search" placeholder="Buscar" readonly="readonly" onclick="Buscar()" style="background: #3b5998; color: white;  border:none;"></td><td><button onclick="Mess()" style="background: #3b5998; border:none;"><img src="Icons/mes.png" ></button></td></tr></table></center>
+  </div>	
+  <div data-role="navbar" >
+    <ul>
+    <li><a href="#home" style="background: white;" class="ui-btn-active"><center><img src="Icons/news.png"></center></a></li>
+    <li><a href="Videos.html" target="_self" style="background: white;" ><center><img src="Icons/2.png"></center></a></li>	
+    <li><a href="Ventas.html" target="_self" style="background: white;"><center><img src="Icons/3.png"></center></a></li>
+     <li><a href="Notificaciones.html" target="_self" style="background: white;"><center><img src="Icons/4.png"></center></a></li>
+     <li><a href="Opciones.html" target="_self" style="background: white;"><center><img src="Icons/5.png"></center></a></li> 
+    </ul> 
+  </div>
+  <div style="background-color: #DADADC; width: 100%; height: 1;"></div>
+  
+  <!-- Publica -->
+  <fieldset style="background-color: white; border-color: #DADADC;">
+    	<center>
+    	<table>
+    		<tr>
+    			<td><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/perf.jpg" width="35" height="35"></a></td>
+    			<td><a href="#Publi" class="ui-btn" style="background: white; border-radius: 20px 20px 20px 20px; width: 200px;">¿Qué estás pensando?</a></td>
+    			<td><button style="background: white;"><img src="Icons/gl.png"></button></td>
+    		</tr>
+
+    	</table></center>
+    </fieldset>
+    <div style="background-color: #DADADC; width: 100%; height: 5;"></div>
+    
+    <!-- Barra de estados -->
+    <fieldset style="background: white; width: 100%;">
+    <table  align="left">
+    	<tr>
+  			<td><b>Historias</b></td>  
+  	   </tr> 
+    </table>
+    <table align="right">
+    	<tr>
+  	 		<td ><a href="" style="text-decoration:none; color: black;">Reproducir todas</a></td> 
+  	   </tr> 
+    </table>
+    <br>
+    <table align="left"> 
+  	  		   	  <tr>
+  	  		   	   	  		   	 <td>&nbsp;</td>
+                             <td><a href="#Foto"  id="perfil2" ><img id="perfil2" src="Images/perf.jpg" width="40" height="40"></a></td>
+                             <!-- Mont -->
+                             <td><a href="#myPopup" data-rel="popup"  data-transition="pop" id="perfil2" ><img id="perfil2" src="Images/Mont.jpg" width="40" height="40"></a><div data-role="popup" id="myPopup" data-theme="b">   
+                              <br>
+                              <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/Mont.jpg" width="35" height="35"></a></center></td> <td><center><b><a href="Perfil.html" style="text-decoration:none; color: white;">Montserrat Hernandez</a></b></center> <font size="1" style="text-align: left;" color="white">1 min<font></td></tr></table> 
+                                <table align="right"><tr> <td><img src="Icons/mas.png"> </td><td>&nbsp;</td><td><img src="Icons/canm.png"></td><td>&nbsp;</td></tr></table><br><br>
+                              <img src="Images/em.jpg">
+                              <center>
+                              <table>
+                                <tr>
+                                  <td><input  type="text" name="search" placeholder="Responder" style="background: opacity:0.7; color: white; border: 2px; border-color: white;">                   
+                              </td>
+                                  <td><img src="Icons/Came.png"></td>
+                                </tr>
+                              </table>
+                              </center>
+                               </td>
+                               <!-- Kaori -->
+                               <td><a href="#PKao" data-rel="popup"  data-transition="pop" id="perfil2" ><img id="perfil2" src="Images/kao.jpg" width="40" height="40"></a><div data-role="popup" id="PKao" data-theme="b"> 
+                              <br>
+                              <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/kao.jpg" width="35" height="35"></a></center></td> <td><center><b><a href="Perfil.html" style="text-decoration:none; color: white;">Kaori Mejia Mejia</a></b></center> <font size="1" style="text-align: left;" color="white">1 hora<font></td></tr></table> 
+                                <table align="right"><tr> <td><img src="Icons/mas.png"> </td><td>&nbsp;</td><td><img src="Icons/canm.png"></td><td>&nbsp;</td></tr></table><br><br>
+                              <img src="Images/ek2.jpg" style="width: 100%;">
+                              <center>
+                              <table>
+                                <tr>
+                                  <td><input  type="text" name="search" placeholder="Responder" style="background: opacity:0.7; color: white; border: 2px; border-color: white;">                   
+                              </td>
+                                  <td><img src="Icons/Came.png"></td>
+                                </tr>
+                              </table>
+                              </center>
+                               </td>
+                               <!-- Paola -->
+                               <td><a href="#Pao" data-rel="popup"  data-transition="pop" id="perfil2" ><img id="perfil2" src="Images/pao.jpg" width="40" height="40"></a><div data-role="popup" id="Pao" data-theme="b"> 
+                              <br>
+                              <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/pao.jpg" width="35" height="35"></a></center></td> <td><center><b><a href="Perfil.html" style="text-decoration:none; color: white;">Paola Bautista</a></b></center> <font size="1" style="text-align: left;" color="white">1 hora<font></td></tr></table> 
+                                <table align="right"><tr> <td><img src="Icons/mas.png"> </td><td>&nbsp;</td><td><img src="Icons/canm.png"></td><td>&nbsp;</td></tr></table><br><br>
+                              <img src="Images/ep.jpg">
+                              <center>
+                              <table>
+                                <tr>
+                                  <td><input  type="text" name="search" placeholder="Responder" style="background: opacity:0.7; color: white; border: 2px; border-color: white;">                   
+                              </td>
+                                  <td><img src="Icons/Came.png"></td>
+                                </tr>
+                              </table>
+                              </center>
+                               </td>
+                               <!-- Mai -->
+                               <td><a href="#PMai" data-rel="popup"  data-transition="pop" id="perfil2" ><img id="perfil2" src="Images/mai.jpg" width="40" height="40"></a><div data-role="popup" id="PMai" data-theme="b"> 
+                              <br>
+                              <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/mai.jpg" width="35" height="35"></a></center></td> <td><center><b><a href="Perfil.html" style="text-decoration:none; color: white;">Maireli Paredes</a></b></center> <font size="1" style="text-align: left;" color="white">2 horas<font></td></tr></table> 
+                                <table align="right"><tr> <td><img src="Icons/mas.png"> </td><td>&nbsp;</td><td><img src="Icons/canm.png"></td><td>&nbsp;</td></tr></table><br><br>
+                              <img src="Images/emai.jpg">
+                              <center>
+                              <table>
+                                <tr>
+                                  <td><input  type="text" name="search" placeholder="Responder" style="background: opacity:0.7; color: white; border: 2px; border-color: white;">                   
+                              </td>
+                                  <td><img src="Icons/Came.png"></td>
+                                </tr>
+                              </table>
+                              </center>
+                               </td>
+                               <!-- Emily -->
+                               <td><a href="#PEmy" data-rel="popup"  data-transition="pop" id="perfil2" ><img id="perfil2" src="Images/emi.jpg" width="40" height="40"></a><div data-role="popup" id="PEmy" data-theme="b"> 
+                              <br>
+                              <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/emi.jpg" width="35" height="35"></a></center></td> <td><center><b><a href="Perfil.html" style="text-decoration:none; color: white;">Emily Gachúz</a></b></center> <font size="1" style="text-align: left;" color="white">3 horas<font></td></tr></table> 
+                                <table align="right"><tr> <td><img src="Icons/mas.png"> </td><td>&nbsp;</td><td><img src="Icons/canm.png"></td><td>&nbsp;</td></tr></table><br><br>
+                              <img src="Images/eem.jpg">
+                              <center>
+                              <table>
+                                <tr>
+                                  <td><input  type="text" name="search" placeholder="Responder" style="background: opacity:0.7; color: white; border: 2px; border-color: white;">                   
+                              </td>
+                                  <td><img src="Icons/Came.png"></td>
+                                </tr>
+                              </table>
+                              </center>
+                               </td>
+                               <!-- Cris -->
+                               <td><a href="#PCris" data-rel="popup"  data-transition="pop" id="perfil2" ><img id="perfil2" src="Images/cris.jpg" width="40" height="40" data-position-to="window"></a><div data-role="popup" id="PCris" data-theme="b"> 
+                              <br>
+                              <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/cris.jpg" width="35" height="35"></a></center></td> <td><center><b><a href="Perfil.html" style="text-decoration:none; color: white;">Crish Uriel Vital</a></b></center> <font size="1" style="text-align: left;" color="white">4 horas<font></td></tr></table> 
+                                <table align="right"><tr> <td><img src="Icons/mas.png"> </td><td>&nbsp;</td><td><img src="Icons/canm.png"></td><td>&nbsp;</td></tr></table><br><br>
+                              <img src="Images/ec.jpg">
+                              <center>
+                              <table>
+                                <tr>
+                                  <td><input  type="text" name="search" placeholder="Responder" style="background: opacity:0.7; color: white; border: 2px; border-color: white;">                   
+                              </td>
+                                  <td><img src="Icons/Came.png"></td>
+                                </tr>
+                              </table>
+                              </center>
+                               </td>
+                               <!-- Hector -->
+                               <td><a href="#PHec" data-rel="popup"  data-transition="pop" id="perfil2" ><img id="perfil2" src="Images/hec.jpg" width="40" height="40" data-position-to="window"></a><div data-role="popup" id="PHec" data-theme="b"> 
+                              <br>
+                              <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/hec.jpg" width="35" height="35"></a></center></td> <td><center><b><a href="Perfil.html" style="text-decoration:none; color: white;">Héctor Alonso Mejia Mendoza</a></b></center> <font size="1" style="text-align: left;" color="white">5 horas<font></td></tr></table> 
+                                <table align="right"><tr> <td><img src="Icons/mas.png"> </td><td>&nbsp;</td><td><img src="Icons/canm.png"></td><td>&nbsp;</td></tr></table><br><br>
+                              <img src="Images/eh.jpg">
+                              <center>
+                              <table>
+                                <tr>
+                                  <td><input  type="text" name="search" placeholder="Responder" style="background: opacity:0.7; color: white; border: 2px; border-color: white;">                   
+                              </td>
+                                  <td><img src="Icons/Came.png"></td>
+                                </tr>
+                              </table>
+                              </center>
+                               </td>   
+  	  		   	   	</tr>     	   
+ </table>
+</fieldset>
+    <div style="background-color: #DADADC; width: 100%; height: 5;"></div>   
+    
+    <!-- Publicacion 1 -->
+    <fieldset style="background-color: white; "> 
+    <br> 
+    <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/perf.jpg" width="35" height="35"></a></center></td> <td><center><b><a href="Perfil.html" style="text-decoration:none; color: black;">Ulises</a></b></center> <font size="1" style="text-align: left;">1 min<font></td> </table>  
+    <br><br>    
+     <table align="left">
+       <tr>
+         
+         <td> <p id="MP" ></p></td>
+       </tr>
+     </table>     
+     <br> 
+    <div data-role="navbar" >
+    <ul>
+      <li><a href="#anylink" style="background: white;" onclick="Resultado('+')"> <table  align="center"> <tr> <td ><center><img src="Icons/lik.png" id="operador"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Com" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/com.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Compa" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/n.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+ </ul>
+  </div> 
+    </fieldset>
+<div style="background-color: #DADADC; width: 100%; height: 5;"></div>
+     <!-- Publicacion 2 -->
+    <fieldset style="background-color: white; "> 
+    <br> 
+    <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="camara.html"  id="perfil2" ><img id="perfil2" src="Images/twice.jpg" width="35" height="35"></a></center></td> <td><center><b><a href="" style="text-decoration:none; color: black;">Twice Música</a></b></center> <font size="1" style="text-align: left;">5 horas<font></td> </table>  
+    <br><br>  
+      
+    <p style="text-align: left; font-weight: normal;" >&nbsp;Seguimos trabajando en la mezcla de nuestro &nbsp;nuevo álbum. 10 nuevas canciones escritas por &nbsp;nosotros. ¡Muy pronto! 🔥 <font color="blue"> #twicemusica</font>
+       </p>   
+    <img src="Images/grab.jpg" style="height: 70%; width: 100%;">    
+    <div data-role="navbar" >
+    <br>
+    <ul>
+      <li><a href="#anylink" style="background: white;" onclick="Resultado('a')"> <table  align="center"> <tr> <td ><center><img src="Icons/lik.png" id="opera"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Com1" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/com.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Compa" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/n.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+ </ul>
+  </div> 
+    </fieldset>
+  <div style="background-color: #DADADC; width: 100%; height: 5;"></div>
+     <!-- Publicacion 3 -->
+    <fieldset style="background-color: white; "> 
+    <br> 
+    <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="camara.html"  id="perfil2" ><img id="perfil2" src="Icons/spotify.png" width="35" height="35"></a></center></td> <td><center><b><a href="" style="text-decoration:none; color: black;">Spotify</a></b></center> <font size="1" style="text-align: left;">Publicidad<font></td> </table>  
+    <br><br>   
+    <p style="text-align: left; font-weight: normal;" >&nbsp;Acabamos de actualizar nuestro playlist “Hits &nbsp;Cristianos”. ¡Corre a escucharlo para descubrir &nbsp;nueva música cristiana! 🔥 <font color="blue">#hitscristianos 🔥 &nbsp;http://sptfy.com/15R0</font> (en portada Majo y Dan). </p>   
+    <img src="Images/pors.jpg" style="height: 60%; width: 100%;">    
+    <div data-role="navbar" >
+    <br>
+    <ul>
+      <li><a href="#anylink" style="background: white;" onclick="Resultado('b')"> <table  align="center"> <tr> <td ><center><img src="Icons/lik.png" id="uno"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Com2" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/com.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Compa" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/n.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+ </ul>
+  </div> 
+    </fieldset>
+  <div style="background-color: #DADADC; width: 100%; height: 5;"></div>
+  <!-- Publicacion 3 --> 
+    <fieldset style="background-color: white; "> 
+    <br> 
+    <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/fen.jpg" width="35" height="35"></a></center></td> <td><center><b><a href="Perfil.html" style="text-decoration:none; color: black;">Fender</a></b> </center> <font size="1" style="text-align: left;">7 horas<font></td> </table>  
+    <br><br>   
+     
+    <p style="text-align: left; font-weight: normal;" >&nbsp;No puedes decidir entre una strat o una tele?
+Aquí &nbsp;hay una guía básica entre los dos 👉🏼 <font color="blue"> http://bit.ly/&nbsp;2sAVnRp</font></p>  
+    <img src="Images/guitar.png" style="height: 40%; width: 100%;"> 
+     <br> 
+    <div data-role="navbar" >
+    <ul>
+      <li><a href="#anylink" style="background: white;" onclick="Resultado('c')"> <table  align="center"> <tr> <td ><center><img src="Icons/lik.png" id="dos"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Com3" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/com.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Compa" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/n.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+ </ul>
+  </div> 
+    </fieldset>
+<div style="background-color: #DADADC; width: 100%; height: 5;"></div>
+  <!-- Publicacion 4 --> 
+    <fieldset style="background-color: white; "> 
+    <br> 
+    <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="camara.html"  id="perfil2" ><img id="perfil2" src="Images/yo.jpg" width="35" height="35"></a></center></td> <td><center> <a href="" style="text-decoration:none; color: black;">Montserrat Hernandez</a>  </center> <font size="1" style="text-align: left;">15 horas<font></td> </table>  
+    <br><br>   
+      
+     <p style="text-align: left; font-weight: normal;" >&nbsp;Principio de la relatividad</font></p>   
+    <img src="Images/yo.jpg" style="height: 50%; width: 100%;"> 
+     <br> 
+    <div data-role="navbar" >
+    <ul>
+      <li><a href="#anylink" style="background: white;" onclick="Resultado('d')"> <table  align="center"> <tr> <td ><center><img src="Icons/lik.png" id="tres"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Com4" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/com.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Compa" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/n.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+ </ul>
+  </div> 
+    </fieldset>
+<div style="background-color: #DADADC; width: 100%; height: 5;"></div>
+ 
+   <!-- Publicacion 5 --> 
+    <fieldset style="background-color: white; "> 
+    <br> 
+    <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/mar.png" width="35" height="35"></a></center></td> <td><center><b><a href="Perfil.html" style="text-decoration:none; color: black;">Marvel</a></b> </center> <font size="1" style="text-align: left;">23 horas<font></td> </table>  
+    <br><br>   
+      
+    <p style="text-align: left; font-weight: normal;" >&nbsp;Sólo falta un mes para el estreno de  <font color="blue">#AntMan</font> y <font color="blue">&nbsp;#TheWasp</font></p>  
+    <img src="Images/ant.jpg" style="height: 50%; width: 100%;"> 
+     <br> 
+    <div data-role="navbar" >
+    <ul>
+      <li><a href="#anylink" style="background: white;" onclick="Resultado('e')"> <table  align="center"> <tr> <td ><center><img src="Icons/lik.png" id="cuatro"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Com5" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/com.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Compa" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/n.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+ </ul>
+  </div> 
+    </fieldset>
+<div style="background-color: #DADADC; width: 100%; height: 5;"></div>
+ </div>
+       <div data-role="footer" data-position="fixed" style="background: #3b5998;">
+    <h1 style="color: white;">Facebook</h1>
+  </div>
+</div> 
+
+
+
+
+
+
+<!-- COMENTARIOSllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll  >
+<!´- Comentario 1 -->
+<div data-role="page" data-dialog="true" id="Com">
+  <div data-role="header" style="background: #3b5998; border:none;">
+    <center><p style="color: white; font-weight: normal;">Comentarios</p></center> 
+  </div>
+  <div data-role="main" class="ui-content">
+    <div style="width: 100%; background-color: #DADADC; border-radius: 20px 20px 20px 20px;">
+      <table align="left">
+        <tr> 
+           <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/perf.jpg" width="35" height="35"></a></center></td> 
+           <td> <b><a href="Perfil.html" style="text-decoration:none; color: black;">Ulises</a></b><br><font size="3" style="text-align: left;" id="Comentar"> <font></td>
+        </tr></table><br><br> 
+    </div>
+  </div>  
+    <div data-role="footer">
+    <center>
+    <table>
+      <tr>
+        <td><button><img src="Icons/cc.png"></button></td>
+        <td><input type="text" id="comm" name="comm" placeholder="Escribe un comentario..."></td>
+        <td><button onclick="Comenta()"><img src="Icons/done.png"></button></td>
+      </tr>
+    </table></center>
+  </div> 
+    
+  </div>
+  <!-- Comentario 2 -->
+<div data-role="page" data-dialog="true" id="Com1">
+  <div data-role="header" style="background: #3b5998; border:none;">
+    <center><p style="color: white; font-weight: normal;">Comentarios</p></center> 
+  </div>
+  <div data-role="main" class="ui-content">
+    <div style="width: 100%; background-color: #DADADC; border-radius: 20px 20px 20px 20px;">
+      <table align="left">
+        <tr> 
+           <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/perf.jpg" width="35" height="35"></a></center></td> 
+           <td> <b><a href="Perfil.html" style="text-decoration:none; color: black;">Ulises</a></b><br><font size="3" style="text-align: left;" id="Comentar1"> <font></td>
+        </tr></table><br><br> 
+    </div>
+  </div>  
+    <div data-role="footer">
+    <center>
+    <table>
+      <tr>
+        <td><button><img src="Icons/cc.png"></button></td>
+        <td><input type="text" id="comm1" name="comm" placeholder="Escribe un comentario..."></td>
+        <td><button onclick="Comenta()"><img src="Icons/done.png"></button></td>
+      </tr>
+    </table></center>
+  </div>
+    
+  </div>
+  <!-- Comentario 3 -->
+<div data-role="page" data-dialog="true" id="Com2">
+  <div data-role="header" style="background: #3b5998; border:none;">
+    <center><p style="color: white; font-weight: normal;">Comentarios</p></center> 
+  </div>
+  <div data-role="main" class="ui-content">
+    <div style="width: 100%; background-color: #DADADC; border-radius: 20px 20px 20px 20px;">
+      <table align="left">
+        <tr> 
+           <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/perf.jpg" width="35" height="35"></a></center></td> 
+           <td> <b><a href="Perfil.html" style="text-decoration:none; color: black;">Ulises</a></b><br><font size="3" style="text-align: left;" id="Comentar2"> <font></td>
+        </tr></table><br><br> 
+    </div>
+  </div>  
+    <div data-role="footer">
+    <center>
+    <table>
+      <tr>
+        <td><button><img src="Icons/cc.png"></button></td>
+        <td><input type="text" id="comm2" name="comm" placeholder="Escribe un comentario..."></td>
+        <td><button onclick="Comenta()"><img src="Icons/done.png"></button></td>
+      </tr>
+    </table></center>
+  </div>
+    
+  </div>
+  <!-- Comentario 4 -->
+<div data-role="page" data-dialog="true" id="Com3">
+  <div data-role="header" style="background: #3b5998; border:none;">
+    <center><p style="color: white; font-weight: normal;">Comentarios</p></center> 
+  </div>
+  <div data-role="main" class="ui-content">
+    <div style="width: 100%; background-color: #DADADC; border-radius: 20px 20px 20px 20px;">
+      <table align="left">
+        <tr> 
+           <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/perf.jpg" width="35" height="35"></a></center></td> 
+           <td> <b><a href="Perfil.html" style="text-decoration:none; color: black;">Ulises</a></b><br><font size="3" style="text-align: left;" id="Comentar3"> <font></td>
+        </tr></table><br><br> 
+    </div>
+  </div>  
+    <div data-role="footer">
+    <center>
+    <table>
+      <tr>
+        <td><button><img src="Icons/cc.png"></button></td>
+        <td><input type="text" id="comm3" name="comm" placeholder="Escribe un comentario..."></td>
+        <td><button onclick="Comenta()"><img src="Icons/done.png"></button></td>
+      </tr>
+    </table></center>
+  </div>
+    
+  </div>
+  <!-- Comentario 5 -->
+<div data-role="page" data-dialog="true" id="Com4">
+  <div data-role="header" style="background: #3b5998; border:none;">
+    <center><p style="color: white; font-weight: normal;">Comentarios</p></center> 
+  </div>
+  <div data-role="main" class="ui-content">
+    <div style="width: 100%; background-color: #DADADC; border-radius: 20px 20px 20px 20px;">
+      <table align="left">
+        <tr> 
+           <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/perf.jpg" width="35" height="35"></a></center></td> 
+           <td> <b><a href="Perfil.html" style="text-decoration:none; color: black;">Ulises</a></b><br><font size="3" style="text-align: left;" id="Comentar4"> <font></td>
+        </tr></table><br><br> 
+    </div>
+  </div>  
+    <div data-role="footer">
+    <center>
+    <table>
+      <tr>
+        <td><button><img src="Icons/cc.png"></button></td>
+        <td><input type="text" id="comm4" name="comm" placeholder="Escribe un comentario..."></td>
+        <td><button onclick="Comenta()"><img src="Icons/done.png"></button></td>
+      </tr>
+    </table></center>
+  </div></div>
+  <!-- Comentario 6 -->
+<div data-role="page" data-dialog="true" id="Com5">
+  <div data-role="header" style="background: #3b5998; border:none;">
+    <center><p style="color: white; font-weight: normal;">Comentarios</p></center> 
+  </div>
+  <div data-role="main" class="ui-content">
+    <div style="width: 100%; background-color: #DADADC; border-radius: 20px 20px 20px 20px;">
+      <table align="left">
+        <tr> 
+           <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/perf.jpg" width="35" height="35"></a></center></td> 
+           <td> <b><a href="Perfil.html" style="text-decoration:none; color: black;">Ulises</a></b><br><font size="3" style="text-align: left;" id="Comentar5"> <font></td>
+        </tr></table><br><br> 
+    </div>
+  </div>  
+    <div data-role="footer">
+    <center>
+    <table>
+      <tr>
+        <td><button><img src="Icons/cc.png"></button></td>
+        <td><input type="text" id="comm5" name="comm" placeholder="Escribe un comentario..."></td>
+        <td><button onclick="Comenta()"><img src="Icons/done.png"></button></td>
+      </tr>
+    </table></center>
+  </div>
+    
+  </div>
+<!-- Compartir -->
+<div data-role="page" data-dialog="true" id="Compa">
+  <div data-role="header" style="background: #3b5998; border:none;">
+    <center><p style="color: white; font-weight: normal;">Compartir</p></center>  </div> 
+    <div style="background: white;  ">
+      <ul data-role="listview" data-inset="true">
+      <li><a href="#p">Compartir ahora</a></li>
+      <li><a href="#Pubi">Escribir publicación</a></li>
+      <li><a href="#p">Enviar como mensaje</a></li>
+      <li><a href="#p">Compartir en una página</a></li>
+    </ul>
+    </div>
+  </div>
+  <!-- Foto -->
+<div data-role="page" data-dialog="true" id="Foto" data-theme="b" style="width: 100%; height: 100%;">
+   <img src="Images/foto.jpg" style="width: 100%; height: 100%;">
+  </div>
+
+   <!-- Publicacion -->
+<div data-role="page" data-dialog="true" id="Publi">
+   <div data-role="header" style="background: #3b5998; border:none;">
+    <center><p style="color: white; font-weight: normal;">Publicación</p></center> 
+  </div>
+    
+      <form method="post" name="fsormu" action=""  id="Publicacion" >
+    <div class="ui-field-contain"> 
+      <table align="left">
+        <tr>
+          <td>&nbsp;</td>
+           <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/perf.jpg" width="35" height="35"></a></center></td> 
+           <td><center><b><a href="Perfil.html" style="text-decoration:none; color: black;">Ulises</a></b></center> <font size="1" style="text-align: left;">Amigos<font></td>
+        </tr></table><br><br>    
+           <textarea id="es" name="es" placeholder="¿Qué estás pensando?"></textarea>  
+           
+        <table>
+        <tr>
+          <td>&nbsp;</td>
+          <td><img src="Icons/picture.png" ></td>
+          <td >Foto/Video</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><img src="Icons/map.png" ></td>
+          <td >Estoy Aquí</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><img src="Icons/happy.png" ></td>
+          <td >Sentimiento/Actividad/Stiker</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><img src="Icons/u.png" ></td>
+          <td >Etiquetar amigos</td>
+          <tr>
+          <td>&nbsp;</td>
+          <td><img src="Icons/v.png" ></td>
+          <td >Transmitir</td>
+        </tr> 
+      </table><br><button onclick="myFunction()" style="background: #2078e6; color: white; font-weight: normal;">Publicar</button> </div> </form>
+      
+  </div>  
+  
+</body>
+</html>

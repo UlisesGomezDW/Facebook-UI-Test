@@ -1,0 +1,15 @@
+.col{
+	background: #2078e6;
+	text-align: center;
+	color: white;
+}
+#perfil2{
+    border-radius: 100px 100px 100px 100px;
+}
+#letra{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white; 
+}

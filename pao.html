@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <!-- Ajustes de pantalla -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <!-- Hoja de estilo -->
+  <link rel="stylesheet" href="Estilos/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="Estilos/Estilo.css">
+  <!-- Librerias de Java Script -->
+  <script src="Script/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="Script/jquery.mobile-1.4.5.min.js"></script>
+  <script src="Script/Likes.js" type="text/javascript"></script>
+  <script>
+function Comenta() { 
+  var co5=document.getElementById("comm5").value;
+  document.getElementById("Comentar5").innerHTML = co5; 
+}
+</script>
+</head>
+<body>
+<div data-role="page" id="pageone">
+  
+  <div style="background: white;">
+    <div style="visibility:visible z-index:1">   
+       <img src="Images/porpao.jpg" style="width: 100%; height: 50%;"> 
+    </div>
+    <div style="position:absolute; top:225px; left:36%; visibility:visible z-index:1">   
+      <img src="Images/pao.jpg" border="1s" style="width: 90px; height: 90px;  border-color: white;">
+    </div>
+    <br><br>
+    <h1 style="text-align: center;">Paola Bautista</h1> 
+   <div style="background: white;">
+    <div data-role="navbar">
+    <ul>
+      <li><a href="#anylink" style="background: white;"><img src="Icons/sua.png"></a></li>
+      <li><a href="#anylink" style="background: white;"><img src="Icons/sig.png"></a></li>
+      <li><a href="#anylink" style="background: white;"><img src="Icons/look.png"></a></li>
+      <li><a href="#anylink" style="background: white;"><img src="Icons/more.png"></a></li>
+    </ul>
+  </div></div>
+  <center>
+    <p style="font-weight: normal;" id="letra">Dios es el camino, la verdad y la vida...<br><font color="blue" style="font-weight: normal;" id="letra"></font></p>  
+  </center>  
+  <p style="font-weight: normal;" id="letra">&nbsp;<img src="Icons/home.png">&nbsp;Vive en Rosario<br>
+    &nbsp;<img src="Icons/ubi.png">&nbsp;De Rosario<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="blue" style="font-weight: normal;" id="letra">Ver detalles</font></p> 
+    <table><tr><td></td><td>Fotos</td><td style="color: #c6c6ba;">Ver más fotos</td></tr></table>
+ 
+ <div style="height: 90px; width: 100%;"><img src="Images/porpao.jpg" style="width: 59%;" height="80" align="left" ><img src="Images/pao.jpg" height="80" style="width: 39%;" align="right"></div><br><div><center><font color="blue" style="font-weight: normal;" id="letra">Ver fotos</font></center></div>
+ <table><tr><td></td><td>Amigos</td><td style="color: #c6c6ba;">3 amigos en común</td></tr></table>
+ <div style="height: 90px; width: 100%;"><img src="Images/vale.jpg" style="width: 30%;" height="80" align="left" ><img src="Images/emi.jpg" height="80" style="width: 30%;" align="right"><img src="Images/cris.jpg" height="80" style="width: 30%;" align="right"></div><div><center><font color="blue" style="font-weight: normal;" id="letra">Ver amigos</font></center></div>
+ <br>
+ <div style="background: white;">
+    <div data-role="navbar">
+    <ul>
+      <li><a href="#anylink" style="background: white;">Información</a></li>
+      <li><a href="#anylink" style="background: white;">Fotos</a></li>
+      <li><a href="#anylink" style="background: white;">Amigos</a></li> 
+    </ul>
+  </div></div> 
+
+  <div style="background-color: #DADADC; width: 100%; height: 5px;"></div>
+   </div>
+  <!-- Publicacion 3 --> 
+    <fieldset style="background-color: white; "> 
+    <br> 
+    <table  align="left" > <tr><td>&nbsp;</td> <td rowspan="2"><center><a href="camara.html"  id="perfil2" ><img id="perfil2" src="Images/pao.jpg" width="35" height="35"></a></center></td> <td><center> <a href="" style="text-decoration:none; color: black;">Paola Bautista</a>  </center> <font size="1" style="text-align: left;">Hace 30 min.<font></td> </table>  
+    <br><br>   
+     
+    <p style="text-align: left;" > &nbsp;&nbsp; Me gusto esta foto. Dije: ¿porqué no?</p> 
+    <img src="Images/pao.jpg" style="height: 60%; width: 100%;"> 
+     <br> 
+    <div data-role="navbar" >
+    <ul>
+      <li><a href="#anylink" style="background: white;" onclick="Resultado('b')"> <table  align="center"> <tr> <td ><center><img src="Icons/lik.png" id="uno"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Com5" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/com.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+      <li><a href="#Compaca" style="background: white;"> <table  align="center"> <tr> <td ><center><img src="Icons/n.png"></center></td> <td><center></center></td> </tr> </table></a></li>
+ </ul>
+  </div> 
+    </fieldset>
+<div style="background-color: #DADADC; width: 100%; height: 5;"></div>
+
+
+  <div data-role="footer" data-position="fixed" style="background: #3b5998;">
+    <h1 style="color: white;">Facebook</h1>
+  </div>
+</div>
+ <!-- Comentario 6 -->
+<div data-role="page" data-dialog="true" id="Com5">
+  <div data-role="header" style="background: #3b5998; border:none;">
+    <center><p style="color: white; font-weight: normal;">Comentarios</p></center> 
+  </div>
+  <div data-role="main" class="ui-content">
+    <div style="width: 100%; background-color: #DADADC; border-radius: 20px 20px 20px 20px;">
+      <table align="left">
+        <tr> 
+           <td rowspan="2"><center><a href="Perfil.html"  id="perfil2" ><img id="perfil2" src="Images/perf.jpg" width="35" height="35"></a></center></td> 
+           <td> <b><a href="Perfil.html" style="text-decoration:none; color: black;">Ulises</a></b><br><font size="3" style="text-align: left;" id="Comentar5"> <font></td>
+        </tr></table><br><br> 
+    </div>
+  </div>  
+    <div data-role="footer">
+    <center>
+    <table>
+      <tr>
+        <td><button><img src="Icons/cc.png"></button></td>
+        <td><input type="text" id="comm5" name="comm" placeholder="Escribe un comentario..."></td>
+        <td><button onclick="Comenta()"><img src="Icons/done.png"></button></td>
+      </tr>
+    </table></center>
+  </div>
+    
+  </div>
+<!-- Compartir -->
+<div data-role="page" data-dialog="true" id="Compa">
+  <div data-role="header" style="background: #3b5998; border:none;">
+    <center><p style="color: white; font-weight: normal;">Compartir</p></center>  </div> 
+    <div style="background: white;  ">
+      <ul data-role="listview" data-inset="true">
+      <li><a href="#p">Compartir ahora</a></li>
+      <li><a href="#p">Escribir publicación</a></li>
+      <li><a href="#p">Enviar como mensaje</a></li>
+      <li><a href="#p">Compartir en una página</a></li>
+    </ul>
+    </div>
+  </div> 
+</body>
+</html>

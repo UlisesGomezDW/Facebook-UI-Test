@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta enco
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="Estilos/jquery.mobile-1.4.5.min.css">
+  <!-- Include the jQuery library -->
+  <script src="Script/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="Script/jquery.mobile-1.4.5.min.js"></script>
+
+      <script>
+      function myFunction() {
+        var face="inicio.html"
+         var alert="#Alert"
+
+        var password=document.getElementById("passw").value;
+        
+        document.getElementById("demo").innerHTML = password;
+
+        var usuarioe=document.getElementById("usua").value;
+        
+        document.getElementById("demo1").innerHTML = usuarioe;
+       
+        if(password=="pass" && usuarioe=="Ulises")
+          document.location.href=face;
+        else
+           document.location.href=alert;
+      }
+      </script>
+      </head>
+      <body bgcolor="#3b5998">
+        <style type="text/css"> 
+      a:link 
+      { 
+      text-decoration:none; 
+      } 
+      </style>
+
+      <div data-role="page" id="pageone" style="background-color:#3b5998;">
+        <div data-role="header" style="background-color:#3b5998;">
+          
+        </div>
+
+        <div data-role="main" class="ui-content" style="background-color:#3b5998" ><br>
+          <img src="Images/fl.png" height="100%" width="100%">
+          <h1 style="background-color: white"></h1>
+             <p id="demo" hidden="hidden">A Paragraph</p><br>
+       <p id="demo1" hidden="hidden">A Paragraph</p>
+          <form method="post" name="formu" action="" method="post" id="formulario" >
+          <div class="ui-field-contain" style="background-color:#3b5998" >
+            <label for="fusu"><font style="color: white; font-family: Arial;">Usuario</font></label>
+            <input type="text" name="usua" id="usua" placeholder="Introduzca su usuario"><br>
+            <label for="fpass"><font style="color: white; font-family: Arial;  font-weight: normal;">Contraseña</font></label>
+            <input type="password" name="passw" id="passw" placeholder="Introduzca su contraseña"><br>
+            <button type="button" onclick="myFunction()" style="background-color:#3b5998" ><font style="color: white; font-family: Arial;  font-weight: normal;s">Iniciar sesión</font> </button>
+
+           </div>
+        </form>
+        
+        </div>
+       
+      </div>
+      <div data-role="page" data-dialog="true" id="Alert">
+        <div data-role="header" style="background: #3b5998; border:none;">
+          <center><p style="color: white; font-weight: normal;">Alerta</p></center> 
+        </div>
+        <div style="background-color: white;">
+         <br>
+         <center>
+          <p>Alguno de los campos es incorrecto. Por favor, vuelva a intentarlo.</p>
+              </center>
+          <br>    
+        </div> 
+        </div>
+      </body>
+      </html>
